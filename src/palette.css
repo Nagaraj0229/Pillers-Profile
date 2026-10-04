@@ -1,0 +1,41 @@
+:root{--paper:#F8FAFC;--surface:#FFFFFF;--ink:#0F172A;--muted:#334155;--line:#E2E8F0;--green:#2563EB;--blue:#2563EB;--orange:#F97316}
+body{background:var(--paper);color:#0F172A}
+.site-header,.site-footer{background:var(--paper)}
+.wordmark-mark{background:#2563EB;color:#FFFFFF}
+.wordmark-mark span,.approach-index span{color:#F97316}
+.nav-contact{border-color:#F97316;background:#F97316;color:#0F172A;font-weight:700}
+.nav-contact:hover,.approach-link:hover,.pillar-more:hover{background:#EA580C;color:#0F172A}
+.hero-intro,.section-note,.pillar-overview{color:#334155}
+.hero h1 span,.section-heading h2 span{color:#475569}
+.status-dot{background:#2563EB}
+.orbit{border-color:#E2E8F0}
+.orbit-core{background:#2563EB;color:#FFFFFF}
+.hero-foot{border-color:#E2E8F0;color:#64748B}
+.services{background:#F8FAFC}
+.pillar-nav{background:#F8FAFC;border-color:#E2E8F0}
+.pillar-nav-label,.pillar-links a{color:#475569}
+.pillar-links a:hover,.pillar-links a[aria-current="location"]{background:#2563EB;color:#FFFFFF}
+.pillar{--accent:#2563EB;background:#FFFFFF;border:1px solid #E2E8F0;border-radius:5px;margin:22px 0;padding:50px;box-shadow:0 8px 24px rgba(15,23,42,.035)}
+.pillar-coral,.pillar-amber,.pillar-green,.pillar-violet,.pillar-teal{--accent:#2563EB}
+.pillar-number,.pillar-content>.eyebrow,.capabilities li:before{color:#2563EB}
+.pillar-glyph{color:#2563EB;border-color:rgba(37,99,235,.35)}
+.pillar-glyph:before,.pillar-glyph:after{border-color:rgba(37,99,235,.2)}
+.capabilities h4,.pillar-index{color:#64748B}
+.capabilities li{border-color:#E2E8F0}
+.pillar-more{padding:11px 14px;background:#F97316;border-radius:3px;color:#0F172A;font-weight:700}
+.approach{background:#0F172A}
+.approach .eyebrow{color:#93C5FD}
+.approach h2 span{color:#CBD5E1}
+.approach>p{color:#CBD5E1}
+.approach-link{padding:13px 16px;border:0;border-radius:3px;background:#F97316;color:#0F172A;font-weight:700}
+.approach-index{color:#1E293B}
+.site-footer{border-top:1px solid #E2E8F0}
+.site-footer>span,.site-footer>a:not(.wordmark){color:#475569}
+.team-banner{background:#FFFFFF;border-top:1px solid #E2E8F0;border-bottom:1px solid #E2E8F0}
+.team-banner-heading .eyebrow,.team-banner-heading h2 span{color:#2563EB}
+.team-banner-note{color:#334155}
+.team-person{border-color:#334155}
+.team-person b{color:#93C5FD}
+.team-marquee-hint{color:#475569}
+@media(max-width:900px){.pillar{padding:36px}.team-marquee{margin-right:calc(-1 * 8vw);margin-left:calc(-1 * 8vw)}}
+@media(max-width:600px){.pillar{padding:28px 22px}.pillar-identity{padding-left:83px}.team-marquee{margin-right:-24px;margin-left:-24px}}

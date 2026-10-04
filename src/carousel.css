@@ -1,0 +1,21 @@
+.pillar-nav{margin-bottom:20px}
+.pillar-links{align-items:center}
+.pillar-step{display:inline-flex;min-height:38px;align-items:center;gap:8px;padding:8px 11px;border:1px solid transparent;border-radius:4px;background:transparent;color:#475569;font:10px var(--mono);cursor:pointer;transition:background-color .18s,color .18s,border-color .18s}
+.pillar-step:hover{border-color:#BFDBFE;background:#EFF6FF;color:#1D4ED8}
+.pillar-step[aria-pressed="true"]{border-color:#BFDBFE;background:#DBEAFE;color:#1D4ED8;font-weight:500}
+.pillar-step:focus-visible,.carousel-buttons button:focus-visible{outline:3px solid #2563EB;outline-offset:3px}
+.service-carousel{max-width:1100px;margin:auto}
+.pillar-list{max-width:none}
+.pillar{min-height:510px;background:#F8FAFF;border-color:#BFDBFE;animation:pillar-arrive .24s ease-out}
+@keyframes pillar-arrive{from{opacity:.55;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+.carousel-controls{display:grid;grid-template-columns:auto minmax(100px,1fr) auto;align-items:center;gap:22px;padding:0 4px}
+.slide-count{color:#475569;font:10px var(--mono);letter-spacing:.08em}
+.carousel-progress{height:3px;overflow:hidden;background:#E2E8F0}
+.carousel-progress span{display:block;width:14.28%;height:100%;background:#2563EB;transition:width .24s ease}
+.carousel-buttons{display:flex;gap:9px}
+.carousel-buttons button{min-height:42px;padding:0 14px;border:1px solid #E2E8F0;border-radius:3px;background:#FFFFFF;color:#0F172A;font:10px var(--mono);letter-spacing:.05em;cursor:pointer;transition:background-color .18s,border-color .18s}
+.carousel-buttons button:hover{border-color:#F97316;background:#F97316}
+.carousel-buttons button span{padding:0 4px}
+@media(max-width:900px){.pillar-step{padding:8px}.carousel-controls{gap:14px}}
+@media(max-width:600px){.pillar-nav{margin-bottom:14px}.pillar-step{min-width:36px;justify-content:center;padding:8px 5px}.carousel-controls{grid-template-columns:auto 1fr;gap:12px}.carousel-progress{grid-column:1/-1;grid-row:1}.slide-count{grid-column:1;grid-row:2}.carousel-buttons{grid-column:2;grid-row:2;justify-content:flex-end}.carousel-buttons button{min-height:42px;padding:0 10px;font-size:9px}.pillar{animation:none}}
+@media(prefers-reduced-motion:reduce){.pillar{animation:none}.pillar-step,.carousel-progress span,.carousel-buttons button{transition:none}}
