@@ -1,0 +1,83 @@
+:root{--paper:#F8F6F2;--surface:#FFFEFC;--ink:#27221F;--muted:#625B55;--line:#E8E0D7;--green:#8C5B49;--blue:#8C5B49;--orange:#292421;--accent:#9C624E;--accent-soft:#F1E7DE;--sand:#E9DED1;--display:"Manrope",sans-serif;--body:"DM Sans",sans-serif;--mono:"DM Mono",monospace}
+html{background:var(--paper)}
+body{background:var(--paper);color:var(--ink)}
+.site-header{background:rgba(255,254,252,.94);border-color:var(--line);backdrop-filter:blur(14px)}
+.wordmark-mark{background:var(--ink);color:#FFFDFC}
+.wordmark-mark span,.approach-index span{color:#C59A74}
+.header-nav a:hover,.text-link:hover,.pillar-more:hover{color:var(--accent)}
+.nav-contact{border-color:var(--ink);border-radius:999px;background:var(--ink);color:#FFFDFC}
+.nav-contact:hover,.pillar-more:hover,.approach-link:hover{background:#8C5B49;color:#FFFDFC}
+.hero{background:radial-gradient(ellipse at 82% 45%,rgba(226,211,195,.35),transparent 34%),var(--paper)}
+.hero h1,.section-heading h2,.approach h2,.team-banner-heading h2{font-family:var(--display);font-weight:600;color:var(--ink);letter-spacing:-.065em}
+.hero h1 span,.section-heading h2 span{color:#8B7B70}
+.hero-intro,.section-note,.pillar-overview{color:var(--muted)}
+.status-dot{background:#A96F56}
+.orbit{border-color:#DCCFC1}
+.orbit-core{background:#9C624E;color:#FFFDFC;box-shadow:0 16px 35px rgba(104,69,51,.2)}
+.orbit-label{border:1px solid rgba(232,224,215,.9);border-radius:999px;background:rgba(255,254,252,.9);color:#57473D;box-shadow:0 5px 18px rgba(70,51,39,.06)}
+.hero-foot{border-color:var(--line);color:#81766D}
+.services{background:#F1EEE8}
+.section-heading .eyebrow,.eyebrow{color:#8C5B49}
+.section-note{color:#625B55}
+.pillar-nav{background:rgba(241,238,232,.94);border-color:#DED5CB;backdrop-filter:blur(14px)}
+.pillar-nav-label,.pillar-step{color:#75695F}
+.pillar-step{border-radius:999px}
+.pillar-step:hover{border-color:#D6C5B6;background:#F7F1EB;color:#684B3D}
+.pillar-step[aria-pressed="true"]{border-color:#D9C4B3;background:#EDE0D4;color:#684B3D}
+.pillar-step:focus-visible{outline-color:#9C624E}
+.pillar{--accent:#9C624E;background:#FFFEFC;border-color:#E5DDD3;border-radius:16px;box-shadow:0 15px 40px rgba(69,49,36,.06)}
+.pillar-coral,.pillar-amber,.pillar-green,.pillar-violet,.pillar-teal{--accent:#9C624E}
+.pillar-number,.pillar-content>.eyebrow,.capabilities li:before{color:#9C624E}
+.pillar-glyph{color:#9C624E;border-color:rgba(156,98,78,.35)}
+.pillar-glyph:before,.pillar-glyph:after{border-color:rgba(156,98,78,.2)}
+.eyebrow-divider{color:#B8A99D}
+.capabilities h4,.pillar-index{color:#8C7F73}
+.capabilities li{border-color:#EAE3DB}
+.pillar-more,.approach-link{border:0;border-radius:999px;background:#292421;color:#FFFDFC;padding:13px 20px;font-size:11px;font-weight:600}
+.pillar-more:hover,.approach-link:hover{background:#8C5B49;color:#FFFDFC}
+.slide-arrow{border-color:rgba(255,254,252,.92);background:rgba(255,254,252,.82);color:#5C4437;box-shadow:0 8px 22px rgba(69,49,36,.14)}
+.slide-control:hover .slide-arrow,.slide-control:focus-within .slide-arrow{border-color:#D6B9A5;background:#EBDDD0;color:#5B3D2E;box-shadow:0 8px 25px rgba(104,69,51,.18)}
+.slide-arrow:focus-visible{outline-color:#9C624E}
+.slide-preview{border-color:rgba(255,254,252,.94);background:rgba(255,252,247,.84);box-shadow:0 18px 48px rgba(57,40,30,.16)}
+.slide-preview-art{border-color:#E9DBCE;background:linear-gradient(145deg,#F8F1E8,#E9DCCE 55%,#FBF9F5);color:#9C624E}
+.slide-preview-art:before,.slide-preview-art:after{border-color:rgba(156,98,78,.24)}
+.slide-preview-art i,.slide-preview-copy strong{color:#8C5B49}
+.preview-direction{color:#8B7D71}
+.preview-name{color:#514941}
+.carousel-progress{background:#E5DDD3}
+.carousel-progress span{background:#9C624E}
+.slide-count{color:#6D6055}
+.team-banner{background:#F7F3ED;border-color:#E8E0D7}
+.team-banner-heading .eyebrow,.team-banner-heading h2 span{color:#9C624E}
+.team-banner-note{color:#625B55}
+.team-marquee{background:#292421;color:#F8F6F2}
+.team-marquee:before{background:linear-gradient(90deg,#292421,transparent)}
+.team-marquee:after{background:linear-gradient(270deg,#292421,transparent)}
+.team-person{border-color:rgba(255,252,247,.32);box-shadow:0 8px 22px rgba(46,32,25,.18)}
+.team-person{background-image:linear-gradient(180deg,transparent 48%,rgba(39,32,28,.86)),url("assets/team-portraits.png")}
+.team-person b{color:#FFF8EF}
+.team-marquee-hint{color:#8E8174}
+.team-marquee-hint span{color:#C29B7C}
+.approach{background:radial-gradient(ellipse at 86% 18%,rgba(211,148,116,.42),transparent 27%),linear-gradient(125deg,#382923,#6F4035 66%,#925842);color:#FFF9F3}
+.approach .eyebrow{color:#E7C5A9}
+.approach h2{color:#FFF9F3}
+.approach h2 span{color:#E8C8B2}
+.approach>p{color:#F0E1D5}
+.approach-link{background:#FFF9F3;color:#352923}
+.approach-link:hover{background:#EAD7C7;color:#352923}
+.approach-index{color:rgba(255,244,235,.07)}
+.site-footer{background:#F8F6F2;border-color:#E8E0D7}
+.site-footer>span,.site-footer>a:not(.wordmark){color:#796D63}
+@media(max-width:900px){.hero{background:radial-gradient(ellipse at 75% 55%,rgba(226,211,195,.32),transparent 42%),var(--paper)}}
+@media(max-width:600px){.hero{background:var(--paper)}.pillar{border-radius:13px}.team-marquee{border-radius:0}}
+
+/* Keep the closing CTA in the site's former technology palette. */
+.approach{background:#0F172A;color:#F3F4EF}
+.approach .eyebrow{color:#93C5FD}
+.approach h2{color:#F3F4EF}
+.approach h2 span{color:#CBD5E1}
+.approach>p{color:#CBD5E1}
+.approach-link{border-radius:3px;background:#F97316;color:#0F172A}
+.approach-link:hover{background:#EA580C;color:#0F172A}
+.approach-index{color:#1E293B}
+.approach-index span{color:#F97316}

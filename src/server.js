@@ -28,5 +28,5 @@ createServer(async (request, response) => {
     response.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" }).end("Not found");
   }
 }).listen(3000, "127.0.0.1", () => {
-  console.log("Northstar site is running at http://localhost:3000");
+  console.log("Lingo Broz site is running at http://localhost:3000");
 });

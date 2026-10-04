@@ -1,0 +1,10 @@
+.team-person{position:relative;display:flex;width:200px;min-width:200px;height:200px;min-height:200px;flex:none;align-items:flex-end;overflow:hidden;padding:0;border:1px solid rgba(147,197,253,.45);border-radius:7px;background-image:linear-gradient(180deg,transparent 52%,rgba(15,23,42,.84)),url("assets/team-portraits.png");background-repeat:no-repeat;background-size:100% 100%,300% 300%;background-position:center,var(--portrait-position);box-shadow:0 6px 18px rgba(15,23,42,.2)}
+.team-person b{position:relative;z-index:1;display:block;width:100%;padding:13px 14px;color:#FFFFFF;font:500 10px var(--mono);letter-spacing:.12em;white-space:nowrap}
+.avatar-one{--portrait-position:0% 0%}
+.avatar-two{--portrait-position:50% 0%}
+.avatar-three{--portrait-position:100% 0%}
+.avatar-four{--portrait-position:0% 50%}
+.avatar-five{--portrait-position:50% 50%}
+.avatar-six{--portrait-position:100% 50%}
+.avatar-seven{--portrait-position:0% 100%}
+@media(max-width:600px){.team-person{width:170px;min-width:170px;height:170px;min-height:170px}.team-person b{padding:11px;font-size:9px}}

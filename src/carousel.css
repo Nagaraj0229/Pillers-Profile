@@ -3,19 +3,37 @@
 .pillar-step{display:inline-flex;min-height:38px;align-items:center;gap:8px;padding:8px 11px;border:1px solid transparent;border-radius:4px;background:transparent;color:#475569;font:10px var(--mono);cursor:pointer;transition:background-color .18s,color .18s,border-color .18s}
 .pillar-step:hover{border-color:#BFDBFE;background:#EFF6FF;color:#1D4ED8}
 .pillar-step[aria-pressed="true"]{border-color:#BFDBFE;background:#DBEAFE;color:#1D4ED8;font-weight:500}
-.pillar-step:focus-visible,.carousel-buttons button:focus-visible{outline:3px solid #2563EB;outline-offset:3px}
-.service-carousel{max-width:1100px;margin:auto}
+.pillar-step:focus-visible{outline:3px solid #2563EB;outline-offset:3px}
+.services{padding-right:max(6vw,32px);padding-left:max(6vw,32px)}
+.service-carousel{width:100%;max-width:1440px;margin:auto}
 .pillar-list{max-width:none}
 .pillar{min-height:510px;background:#F8FAFF;border-color:#BFDBFE;animation:pillar-arrive .24s ease-out}
 @keyframes pillar-arrive{from{opacity:.55;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
-.carousel-controls{display:grid;grid-template-columns:auto minmax(100px,1fr) auto;align-items:center;gap:22px;padding:0 4px}
+.carousel-controls{display:grid;grid-template-columns:auto minmax(100px,1fr);align-items:center;gap:22px;padding:0 4px}
 .slide-count{color:#475569;font:10px var(--mono);letter-spacing:.08em}
 .carousel-progress{height:3px;overflow:hidden;background:#E2E8F0}
 .carousel-progress span{display:block;width:14.28%;height:100%;background:#2563EB;transition:width .24s ease}
-.carousel-buttons{display:flex;gap:9px}
-.carousel-buttons button{min-height:42px;padding:0 14px;border:1px solid #E2E8F0;border-radius:3px;background:#FFFFFF;color:#0F172A;font:10px var(--mono);letter-spacing:.05em;cursor:pointer;transition:background-color .18s,border-color .18s}
-.carousel-buttons button:hover{border-color:#F97316;background:#F97316}
-.carousel-buttons button span{padding:0 4px}
-@media(max-width:900px){.pillar-step{padding:8px}.carousel-controls{gap:14px}}
-@media(max-width:600px){.pillar-nav{margin-bottom:14px}.pillar-step{min-width:36px;justify-content:center;padding:8px 5px}.carousel-controls{grid-template-columns:auto 1fr;gap:12px}.carousel-progress{grid-column:1/-1;grid-row:1}.slide-count{grid-column:1;grid-row:2}.carousel-buttons{grid-column:2;grid-row:2;justify-content:flex-end}.carousel-buttons button{min-height:42px;padding:0 10px;font-size:9px}.pillar{animation:none}}
-@media(prefers-reduced-motion:reduce){.pillar{animation:none}.pillar-step,.carousel-progress span,.carousel-buttons button{transition:none}}
+.pillar{position:relative;padding-right:68px;padding-left:68px}
+.slide-control{position:absolute;z-index:3;top:50%;transform:translateY(-50%)}
+.slide-control-previous{left:14px}
+.slide-control-next{right:14px}
+.slide-arrow{position:relative;z-index:2;display:grid;width:42px;height:42px;place-items:center;transform:translateY(0);border:1px solid rgba(255,255,255,.72);border-radius:50%;background:rgba(255,255,255,.76);color:#1D4ED8;font:22px/1 var(--body);cursor:pointer;box-shadow:0 5px 18px rgba(15,23,42,.12);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);transition:background-color .22s,color .22s,transform .22s,box-shadow .22s}
+.slide-control:hover .slide-arrow,.slide-control:focus-within .slide-arrow{transform:scale(1.06);border-color:#BFDBFE;background:#DBEAFE;box-shadow:0 7px 22px rgba(37,99,235,.2)}
+.slide-preview{position:absolute;top:50%;display:flex;width:248px;min-height:118px;align-items:stretch;gap:12px;padding:10px;border:1px solid rgba(255,255,255,.82);border-radius:8px;background:rgba(255,255,255,.76);box-shadow:0 16px 42px rgba(15,23,42,.16);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .22s ease,transform .22s ease,visibility .22s}
+.slide-control-previous .slide-preview{left:100%;transform:translate(8px,-50%)}
+.slide-control-next .slide-preview{right:100%;transform:translate(-8px,-50%)}
+.slide-control:hover .slide-preview,.slide-control:focus-within .slide-preview{opacity:1;visibility:visible;pointer-events:auto;transform:translate(0,-50%)}
+.slide-preview-art{position:relative;display:grid;width:83px;min-width:83px;place-items:center;overflow:hidden;border:1px solid rgba(37,99,235,.15);border-radius:4px;background:linear-gradient(145deg,#EFF6FF,#DBEAFE 55%,#F8FAFC);color:#2563EB}
+.slide-preview-art:before,.slide-preview-art:after{position:absolute;width:66px;height:24px;border:1px solid rgba(37,99,235,.28);border-radius:50%;content:"";transform:rotate(35deg)}
+.slide-preview-art:after{transform:rotate(-35deg)}
+.slide-preview-art b{z-index:1;font:600 27px/.9 var(--display);letter-spacing:-.07em}
+.slide-preview-art i{position:absolute;right:5px;bottom:5px;color:#1D4ED8;font:7px var(--mono);font-style:normal;letter-spacing:.08em}
+.slide-preview-copy{display:flex;min-width:0;flex-direction:column;justify-content:center;gap:5px}
+.preview-direction{color:#64748B;font:8px var(--mono);letter-spacing:.15em}
+.slide-preview-copy strong{color:#1D4ED8;font:10px var(--mono);letter-spacing:.07em}
+.preview-name{display:-webkit-box;overflow:hidden;color:#334155;font:500 11px/1.35 var(--body);-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.slide-arrow:hover{border-color:#BFDBFE;background:#DBEAFE;color:#1D4ED8}
+.slide-arrow:focus-visible{outline:3px solid #2563EB;outline-offset:3px}
+@media(max-width:900px){.services{padding-right:8vw;padding-left:8vw}.pillar-step{padding:8px}.carousel-controls{gap:14px}}
+@media(max-width:600px){.services{padding-right:24px;padding-left:24px}.pillar-nav{margin-bottom:14px}.pillar-step{min-width:36px;justify-content:center;padding:8px 5px}.carousel-controls{grid-template-columns:auto 1fr;gap:12px}.slide-count{grid-column:1;grid-row:1}.carousel-progress{grid-column:2;grid-row:1}.pillar{padding-right:52px;padding-left:52px;animation:none}.slide-arrow{width:36px;height:36px}.slide-control-previous{left:8px}.slide-control-next{right:8px}.slide-preview{width:208px;min-height:98px;padding:8px;gap:8px}.slide-preview-art{width:65px;min-width:65px}.slide-preview-art b{font-size:23px}.slide-preview-art:before,.slide-preview-art:after{width:52px}.preview-name{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.pillar{animation:none}.pillar-step,.carousel-progress span,.slide-arrow{transition:none}}
